@@ -7,13 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		503DC8E22978D5840012346D /* Acronyms_AppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 503DC8E12978D5840012346D /* Acronyms_AppApp.swift */; };
+		503DC8E22978D5840012346D /* Acronyms_App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 503DC8E12978D5840012346D /* Acronyms_App.swift */; };
 		503DC8E42978D5840012346D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 503DC8E32978D5840012346D /* ContentView.swift */; };
 		503DC8E62978D5850012346D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 503DC8E52978D5850012346D /* Assets.xcassets */; };
 		503DC8E92978D5850012346D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 503DC8E82978D5850012346D /* Preview Assets.xcassets */; };
 		503DC8F32978D5860012346D /* Acronyms_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 503DC8F22978D5860012346D /* Acronyms_AppTests.swift */; };
 		503DC8FD2978D5860012346D /* Acronyms_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 503DC8FC2978D5860012346D /* Acronyms_AppUITests.swift */; };
 		503DC8FF2978D5860012346D /* Acronyms_AppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 503DC8FE2978D5860012346D /* Acronyms_AppUITestsLaunchTests.swift */; };
+		503DC90D2978F6A90012346D /* Acronym.swift in Sources */ = {isa = PBXBuildFile; fileRef = 503DC90C2978F6A90012346D /* Acronym.swift */; };
+		503DC91229790BC50012346D /* APIRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 503DC91129790BC50012346D /* APIRequest.swift */; };
+		503DC914297B125F0012346D /* AcronymListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 503DC913297B125F0012346D /* AcronymListViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,7 +38,7 @@
 
 /* Begin PBXFileReference section */
 		503DC8DE2978D5840012346D /* Acronyms App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Acronyms App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		503DC8E12978D5840012346D /* Acronyms_AppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Acronyms_AppApp.swift; sourceTree = "<group>"; };
+		503DC8E12978D5840012346D /* Acronyms_App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Acronyms_App.swift; sourceTree = "<group>"; };
 		503DC8E32978D5840012346D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		503DC8E52978D5850012346D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		503DC8E82978D5850012346D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -44,6 +47,10 @@
 		503DC8F82978D5860012346D /* Acronyms AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Acronyms AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		503DC8FC2978D5860012346D /* Acronyms_AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Acronyms_AppUITests.swift; sourceTree = "<group>"; };
 		503DC8FE2978D5860012346D /* Acronyms_AppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Acronyms_AppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		503DC90C2978F6A90012346D /* Acronym.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Acronym.swift; sourceTree = "<group>"; };
+		503DC91129790BC50012346D /* APIRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRequest.swift; sourceTree = "<group>"; };
+		503DC913297B125F0012346D /* AcronymListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AcronymListViewModel.swift; sourceTree = "<group>"; };
+		503DC915297D0FB80012346D /* Acronyms-App-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Acronyms-App-Info.plist"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,8 +101,12 @@
 		503DC8E02978D5840012346D /* Acronyms App */ = {
 			isa = PBXGroup;
 			children = (
-				503DC8E12978D5840012346D /* Acronyms_AppApp.swift */,
-				503DC8E32978D5840012346D /* ContentView.swift */,
+				503DC915297D0FB80012346D /* Acronyms-App-Info.plist */,
+				503DC9102978FAC20012346D /* Network */,
+				503DC90B2978F6800012346D /* Model */,
+				503DC90E2978FAA00012346D /* View */,
+				503DC90F2978FAB30012346D /* ViewModel */,
+				503DC8E12978D5840012346D /* Acronyms_App.swift */,
 				503DC8E52978D5850012346D /* Assets.xcassets */,
 				503DC8E72978D5850012346D /* Preview Content */,
 			);
@@ -125,6 +136,38 @@
 				503DC8FE2978D5860012346D /* Acronyms_AppUITestsLaunchTests.swift */,
 			);
 			path = "Acronyms AppUITests";
+			sourceTree = "<group>";
+		};
+		503DC90B2978F6800012346D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				503DC90C2978F6A90012346D /* Acronym.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		503DC90E2978FAA00012346D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				503DC8E32978D5840012346D /* ContentView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		503DC90F2978FAB30012346D /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				503DC913297B125F0012346D /* AcronymListViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		503DC9102978FAC20012346D /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				503DC91129790BC50012346D /* APIRequest.swift */,
+			);
+			path = Network;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,7 +301,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				503DC8E42978D5840012346D /* ContentView.swift in Sources */,
-				503DC8E22978D5840012346D /* Acronyms_AppApp.swift in Sources */,
+				503DC90D2978F6A90012346D /* Acronym.swift in Sources */,
+				503DC91229790BC50012346D /* APIRequest.swift in Sources */,
+				503DC8E22978D5840012346D /* Acronyms_App.swift in Sources */,
+				503DC914297B125F0012346D /* AcronymListViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -420,6 +466,7 @@
 				DEVELOPMENT_TEAM = 83GQRM67B7;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Acronyms-App-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -449,6 +496,7 @@
 				DEVELOPMENT_TEAM = 83GQRM67B7;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Acronyms-App-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
