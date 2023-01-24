@@ -15,8 +15,9 @@
 		503DC8FD2978D5860012346D /* Acronyms_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 503DC8FC2978D5860012346D /* Acronyms_AppUITests.swift */; };
 		503DC8FF2978D5860012346D /* Acronyms_AppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 503DC8FE2978D5860012346D /* Acronyms_AppUITestsLaunchTests.swift */; };
 		503DC90D2978F6A90012346D /* Acronym.swift in Sources */ = {isa = PBXBuildFile; fileRef = 503DC90C2978F6A90012346D /* Acronym.swift */; };
-		503DC91229790BC50012346D /* APIRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 503DC91129790BC50012346D /* APIRequest.swift */; };
 		503DC914297B125F0012346D /* AcronymListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 503DC913297B125F0012346D /* AcronymListViewModel.swift */; };
+		503DC918297EF2890012346D /* APIRequestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 503DC916297EF2890012346D /* APIRequestTests.swift */; };
+		503FD793297F55EE003AAA91 /* APIRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 503DC91129790BC50012346D /* APIRequest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		503DC91129790BC50012346D /* APIRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRequest.swift; sourceTree = "<group>"; };
 		503DC913297B125F0012346D /* AcronymListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AcronymListViewModel.swift; sourceTree = "<group>"; };
 		503DC915297D0FB80012346D /* Acronyms-App-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Acronyms-App-Info.plist"; sourceTree = SOURCE_ROOT; };
+		503DC916297EF2890012346D /* APIRequestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRequestTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,6 +127,7 @@
 			isa = PBXGroup;
 			children = (
 				503DC8F22978D5860012346D /* Acronyms_AppTests.swift */,
+				503DC916297EF2890012346D /* APIRequestTests.swift */,
 			);
 			path = "Acronyms AppTests";
 			sourceTree = "<group>";
@@ -302,8 +305,8 @@
 			files = (
 				503DC8E42978D5840012346D /* ContentView.swift in Sources */,
 				503DC90D2978F6A90012346D /* Acronym.swift in Sources */,
-				503DC91229790BC50012346D /* APIRequest.swift in Sources */,
 				503DC8E22978D5840012346D /* Acronyms_App.swift in Sources */,
+				503FD793297F55EE003AAA91 /* APIRequest.swift in Sources */,
 				503DC914297B125F0012346D /* AcronymListViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -312,6 +315,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				503DC918297EF2890012346D /* APIRequestTests.swift in Sources */,
 				503DC8F32978D5860012346D /* Acronyms_AppTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
